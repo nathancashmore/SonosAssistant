@@ -4,7 +4,7 @@ const logger = require('winston');
 const router = new express.Router();
 
 router.get('/', (req, res) => {
-  res.json({ status: 'ok' });
+  res.json({status: 'ok'});
 });
 
 router.post('/', (req, res) => {
@@ -12,7 +12,13 @@ router.post('/', (req, res) => {
 
   logger.log('info', `COMMAND will play song ${song}`);
 
-  res.json({ status: 'ok', song});
+  const jsonResponse = {
+    "speech": `Ok, i'll play the song ${song} on Sonos`,
+    "source": "sonos-assistant",
+    "displayText": `Ok, i'll play the song ${song} on Sonos`
+  };
+
+  res.json(jsonResponse);
 });
 
 module.exports = router;

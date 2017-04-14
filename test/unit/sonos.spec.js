@@ -7,6 +7,7 @@ const describe = mocha.describe;
 const it = mocha.it;
 
 const playSongInputJson = require('../data/play-song.json');
+const playSongOutputJson = require('../data/play-song-response.json');
 
 describe('Sonos controller', () => {
 
@@ -24,7 +25,7 @@ describe('Sonos controller', () => {
 
     request(getRequest)
       .then((body) => {
-        expect(body).to.eql({status: 'ok'});
+        expect(body).to.deep.equal({status: 'ok'});
         done()
       })
   });
@@ -39,7 +40,7 @@ describe('Sonos controller', () => {
 
       request(postRequest)
         .then((body) => {
-          expect(body).to.eql({status: 'ok', song: 'my demons'});
+          expect(body).to.deep.equal(playSongOutputJson);
           done()
         })
     }
