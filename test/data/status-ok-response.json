@@ -1,0 +1,9 @@
+{
+  "speech": "Everything is A Ok",
+  "source": "sonos-assistant",
+  "displayText": "Everything is A Ok",
+  "status": {
+    "code": 200,
+    "errorType": "success"
+  }
+}

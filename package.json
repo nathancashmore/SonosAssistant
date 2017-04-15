@@ -3,9 +3,12 @@
   "version": "0.0.1",
   "description": "Reception of Api.ai request to cast music to Sonos",
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "./start.sh",
+    "stop": "./stop.sh",
     "lint": "eslint .",
-    "test": "mocha"
+    "pretest": "eslint .",
+    "test": "mocha",
+    "https": "./ngrok http 3000"
   },
   "repository": {
     "type": "git",
@@ -26,8 +29,10 @@
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "fs": "0.0.1-security",
+    "node-sonos-http-api": "git+https://github.com/jishi/node-sonos-http-api.git",
     "path": "^0.12.7",
     "serve-favicon": "^2.4.2",
+    "util": "^0.10.3",
     "winston": "^2.3.1"
   },
   "devDependencies": {
