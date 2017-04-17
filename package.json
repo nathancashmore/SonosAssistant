@@ -3,13 +3,13 @@
   "version": "0.0.1",
   "description": "Reception of Api.ai request to cast music to Sonos",
   "scripts": {
-    "start": "./start.sh",
-    "start-sonos-api": "./start-sonos-api.sh",
-    "stop": "./stop.sh",
+    "start": "./scripts/start.sh",
+    "start-sonos-api": "./scripts/start-sonos-api.sh",
+    "stop": "./scripts/stop.sh",
     "lint": "eslint .",
     "pretest": "eslint .",
-    "test": "mocha",
-    "https": "./ngrok http 3000"
+    "test": "REPLAY=replay mocha",
+    "https": "./scripts/ngrok http 3000"
   },
   "repository": {
     "type": "git",
