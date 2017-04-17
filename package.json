@@ -31,11 +31,11 @@
     "fs": "0.0.1-security",
     "node-sonos-http-api": "git+https://github.com/jishi/node-sonos-http-api.git",
     "path": "^0.12.7",
+    "replay": "^2.1.2",
+    "request-promise": "^4.2.0",
     "serve-favicon": "^2.4.2",
     "util": "^0.10.3",
-    "winston": "^2.3.1",
-    "request": "^2.81.0",
-    "request-promise-native": "^1.0.3"
+    "winston": "^2.3.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
