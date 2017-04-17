@@ -1,7 +1,7 @@
 const logger = require('../helper/logger');
 const request = require('request-promise');
 
-const hostPath = 'http://localhost:5005';
+const hostPath = 'http://example.server.com:5005';
 
 const requestUrl = {
   spotifySong: 'musicsearch/spotify/song'

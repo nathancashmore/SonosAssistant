@@ -8,10 +8,10 @@ const sonosRequest = require('../../../app/helper/sonos-api-request-helper');
 
 describe('Sonos Api Request Helper', () => {
   it('should make request when asked to play song', (done) => {
-    sonosRequest.playSong('cantina')
+    sonosRequest.playSong('sweet dreams')
       .then((result) => {
         expect(result).to.deep.equal({ status: 'success' });
         done();
       });
-  }).timeout(3000);
+  });
 });
