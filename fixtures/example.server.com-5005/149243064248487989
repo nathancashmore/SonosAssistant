@@ -1,0 +1,13 @@
+GET /Lounge/musicsearch/spotify/song/sweet%20dreams
+host: example.server.com:5005
+accept: application/json
+
+HTTP/1.1 200 OK
+access-control-allow-methods: POST, GET, OPTIONS
+access-control-allow-origin: *
+content-length: 20
+content-type: application/json;charset=utf-8
+date: Mon, 17 Apr 2017 12:04:02 GMT
+connection: close
+
+{"status":"success"}

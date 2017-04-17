@@ -1,11 +1,12 @@
 const express = require('express');
 const logger = require('../helper/logger');
-const responseHelper = require('../helper/response-helper');
+const aiResponse = require('../helper/api-ai-response-helper');
+const sonosRequest = require('../helper/sonos-api-request-helper');
 
 const router = new express.Router();
 
 router.get('/', (req, res) => {
-  res.json(responseHelper.success('Everything is A Ok'));
+  res.json(aiResponse.success('Everything is A Ok'));
 });
 
 router.post('/', (req, res) => {
@@ -13,7 +14,14 @@ router.post('/', (req, res) => {
 
   logger.info(`Will play song ${song}`);
 
-  res.json(responseHelper.success(`Ok, i'll play the song ${song} on Sonos`));
+  sonosRequest.playSong(song)
+    .then(() =>
+      res.json(aiResponse.success(`Ok, i'll play the song ${song} on Sonos`))
+    )
+    .catch((e) => {
+      logger.error(`sonos-controller [sonosRequest.playSong] - ${e.message}`);
+      res.json(aiResponse.error(500, e.message));
+    });
 });
 
 module.exports = router;

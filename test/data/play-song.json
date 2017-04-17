@@ -4,11 +4,11 @@
   "lang": "en",
   "result": {
     "source": "agent",
-    "resolvedQuery": "play the song my demons",
+    "resolvedQuery": "play the song sweet dreams",
     "action": "",
     "actionIncomplete": false,
     "parameters": {
-      "music-song": "my demons"
+      "music-song": "sweet dreams"
     },
     "contexts": [],
     "metadata": {
@@ -18,11 +18,11 @@
       "intentName": "play the song"
     },
     "fulfillment": {
-      "speech": "OK, i'll try to play the song my demons on Sonos",
+      "speech": "OK, i'll try to play the song sweet dreams on Sonos",
       "messages": [
         {
           "type": 0,
-          "speech": "OK, i'll try to play the song my demons on Sonos"
+          "speech": "OK, i'll try to play the song sweet dreams on Sonos"
         }
       ]
     },

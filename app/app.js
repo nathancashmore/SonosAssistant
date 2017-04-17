@@ -1,14 +1,18 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const logger = require('./helper/logger');
-const responseHelper = require('./helper/response-helper');
+const aiResponse = require('./helper/api-ai-response-helper');
+const Replay = require('replay');
+
+Replay.mode = process.env.REPLAY || 'replay';
+logger.info(`Replay mode = ${Replay.mode}`);
 
 const sonosController = require('./controllers/sonos-controller');
 
 const app = express();
 
 function errorResponse(code, err) {
-  return responseHelper.error(code, err);
+  return aiResponse.error(code, err);
 }
 
 // run the whole application in a directory

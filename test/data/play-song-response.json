@@ -1,7 +1,7 @@
 {
-  "speech": "Ok, i'll play the song my demons on Sonos",
+  "speech": "Ok, i'll play the song sweet dreams on Sonos",
   "source": "sonos-assistant",
-  "displayText": "Ok, i'll play the song my demons on Sonos",
+  "displayText": "Ok, i'll play the song sweet dreams on Sonos",
   "status": {
     "code": 200,
     "errorType": "success"

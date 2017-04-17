@@ -5,7 +5,7 @@ function successResponse(text) {
     displayText: text,
     status: {
       code: 200,
-      errorType: 'success',
+      errorType: 'success'
     }
   };
 }

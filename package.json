@@ -4,6 +4,7 @@
   "description": "Reception of Api.ai request to cast music to Sonos",
   "scripts": {
     "start": "./start.sh",
+    "start-sonos-api": "./start-sonos-api.sh",
     "stop": "./stop.sh",
     "lint": "eslint .",
     "pretest": "eslint .",
@@ -31,6 +32,8 @@
     "fs": "0.0.1-security",
     "node-sonos-http-api": "git+https://github.com/jishi/node-sonos-http-api.git",
     "path": "^0.12.7",
+    "replay": "^2.1.2",
+    "request-promise": "^4.2.0",
     "serve-favicon": "^2.4.2",
     "util": "^0.10.3",
     "winston": "^2.3.1"
@@ -42,9 +45,7 @@
     "eslint-config-google": "^0.7.1",
     "eslint-plugin-import": "^2.2.0",
     "mocha": "^3.2.0",
-    "zombie": "^5.0.5",
-    "request": "^2.81.0",
-    "request-promise-native": "^1.0.3"
+    "zombie": "^5.0.5"
   },
   "engines": {
     "node": "6.1.0"
