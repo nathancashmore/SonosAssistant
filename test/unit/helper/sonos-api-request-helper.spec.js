@@ -13,5 +13,5 @@ describe('Sonos Api Request Helper', () => {
         expect(result).to.deep.equal({ status: 'success' });
         done();
       });
-  }).timeout(3000);
+  });
 });
