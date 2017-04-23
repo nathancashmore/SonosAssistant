@@ -4,7 +4,7 @@ const logger = require('./helper/logger');
 const aiResponse = require('./helper/api-ai-response-helper');
 const Replay = require('replay');
 
-Replay.mode = process.env.REPLAY || 'replay';
+Replay.mode = process.env.REPLAY || 'bloody';
 logger.info(`Replay mode = ${Replay.mode}`);
 
 const sonosController = require('./controllers/sonos-controller');
