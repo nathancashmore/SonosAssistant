@@ -30,7 +30,7 @@
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "fs": "0.0.1-security",
-    "node-sonos-http-api": "git+https://github.com/jishi/node-sonos-http-api.git",
+    "node-sonos-http-api": "git+https://git@github.com/jishi/node-sonos-http-api.git#master",
     "path": "^0.12.7",
     "replay": "^2.1.2",
     "request-promise": "^4.2.0",
